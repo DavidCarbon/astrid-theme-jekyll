@@ -560,7 +560,7 @@ select {
 }
 .social-widget li a::before,
 .social-menu-widget a:before {
-	font-family: FontAwesome;
+	font-family: "Font Awesome\ 5 Free";
 	color: inherit;
 }
 .social-menu-widget a:before {
@@ -641,11 +641,12 @@ select {
 .widget_pages li::before,
 .widget_recent_comments li::before,
 .widget_categories li::before {
-	font-family: Fontawesome;
+	font-family: "Font Awesome\ 5 Free";
 	font-size: 15px;
+	font-weight: 900;
 }
 .widget_recent_entries li::before {
-	content: '\f040';
+	content: '\f781';
 	margin-right: 5px;
 }
 .widget_archive li::before {
@@ -657,11 +658,11 @@ select {
 	margin-right: 8px;	
 }
 .widget_recent_comments li::before {
-	content: '\f0e5';
+	content: '\f075';
 	margin-right: 8px;
 }
 .widget_categories li::before {
-	content: '\f114';
+	content: '\f07b';
 	margin-right: 8px;
 }
 .tagcloud a {
@@ -722,6 +723,8 @@ select {
 	font-size: 13px;
 }
 .entry-footer .fa,
+.entry-footer .far,
+.entry-meta .far,
 .entry-meta .fa {
 	margin-right: 5px;
 }
@@ -1735,8 +1738,8 @@ body.page-template-page_widgetized {
 	top: 0;
 	left: 0;
 	z-index: 9999;
-	-webkit-transition: all 0.5s;
-	transition: all 0.5s;
+	-webkit-transition: all 1s;
+	transition: all 1s;
 }
 .preloader-hidden {
 	opacity: 0;
@@ -1953,7 +1956,7 @@ body.page-template-page_widgetized {
 .woocommerce div.product form.cart .button::before,
 .woocommerce ul.products li.product .button::before {
 	content: '\f07a';
-	font-family: FontAwesome;
+	font-family: "Font Awesome\ 5 Free";
 	margin-right: 5px;
 }
 .woocommerce ul.products li.product h3 {
@@ -2115,7 +2118,7 @@ body.page-template-page_widgetized {
 		font-size: 42px;
 	}
 	.header-info {
-		top: 30%;
+		top: 10%;
 	}
 	.header-subtext {
 		padding-bottom: 15px;
@@ -2382,4 +2385,27 @@ body.page-template-page_widgetized {
 		margin-left: -30px;
 		margin-right: -30px;
 	}	
+}
+
+/*--------------------------------------------------------------
+## Markdown to HTML (Add-ons)
+--------------------------------------------------------------*/
+
+code {
+	color: #ff0266;
+	font-family: 'Open Sans', sans-serif, monospace;
+}
+
+pre {
+	background: #eee;
+	padding: 5px;
+	font-size: 14px;
+	display: block;
+	color: #212529;
+}
+
+pre code {
+	font-size: inherit;
+	color: inherit;
+	word-break: normal;
 }
